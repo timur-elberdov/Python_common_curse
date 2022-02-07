@@ -12,11 +12,18 @@ while True:
     else:
         break
 
+# Моё решение
 for i in range(0, len(my_list), 2):
     if i == len(my_list) - 1:
         break
     my_list[i], my_list[i + 1] = my_list[i+1], my_list[i]
+print(my_list)
 
+# Решение на уроке
+i = 0
+while i < len(my_list) - 1:
+    my_list[i], my_list[i + 1] = my_list[i + 1], my_list[i]
+    i += 2
 print(my_list)
 
 
