@@ -31,3 +31,19 @@ while True:
 
 print(months_dict[user_month])
 print(months_list[user_month - 1])
+
+months_tuple = ('Зима', 'Весна', 'Лето', 'Осень')
+print(months_tuple[user_month // 3 % 4])
+
+months_dict2 = {
+    'Winter': [12, 1, 2],
+    'Spring': [3, 4, 5],
+    'Summer': [6, 7, 8],
+    'Autumn': [9, 10, 11]
+}
+
+for season in months_dict2:
+    if user_month in months_dict2[season]:
+        print(season)
+        break
+
