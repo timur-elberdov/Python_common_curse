@@ -3,10 +3,10 @@
 """
 
 
-numbers = [i for i in range(20, 240) if (i % 2 == 0) and (i % 3 == 0)]
+numbers = [i for i in range(20, 241) if (i % 20 == 0) or (i % 21 == 0)]
 print(numbers)
 
-""""""
+
 def devisible(start, end, *deviders, all=False):
     """Функция возвращает список всех чисел, кратных deviders в интервале от start до end
 
@@ -28,7 +28,7 @@ def devisible(start, end, *deviders, all=False):
                 break
         return divisibility
 
-    num_range = range(start, end)
+    num_range = range(start, end+1)
     res = []
 
     if all:
