@@ -6,7 +6,7 @@ from random import randint
 
 
 def rand_nums_to_file(quantity, start=0, end=10):
-    random_range = [randint(start, end) for i in range(quantity)]
+    random_range = [randint(start, end) for _ in range(quantity)]
     with open('text_to_task5.txt', 'w', encoding='UTF-8') as file:
         file.write(' '.join(map(str, random_range)))
 
